@@ -1,4 +1,4 @@
-from data_source.sharepoint import SharepointDataSource
+from ..data_source.sharepoint import SharepointDataSource
 
 def conn(url: str, client_id, client_secret, logger):
     page = url.split('/')[-1]
