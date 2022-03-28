@@ -6,7 +6,7 @@ from office365.sharepoint.client_context import ClientContext
 from urllib3.exceptions import InsecureRequestWarning
 
 class SharepointDataSource():
-    """ Representa a conexão ao Sharepoint """
+    """ Classe de conexão com Sharepoint """
     
     def __init__(self, url, client_id, client_secret):
         """
@@ -54,5 +54,6 @@ class SharepointDataSource():
                 return ClientContext(url).with_user_credentials(kwargs['username'], kwargs['password'])
         return None
 
-    def connect(self):
+    def context(self):
+        """ Retorna a variável de contexto do Sharepoint, para uso externo """
         return self._ctx
