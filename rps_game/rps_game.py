@@ -1,3 +1,8 @@
+"""
+    Pedra, Papel e Tesoura. 
+    Versão minimalista
+"""
+
 import random
 
 options = {'r':'rock', 'p':'paper', 's':'scisor'}
