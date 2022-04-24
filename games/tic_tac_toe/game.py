@@ -65,8 +65,7 @@ class Game(object):
         return self._check_draw()
 
     def print_winner(self, winner):
-        print(winner)
-        pass
+        print(self._x_player)
 
     def play(self):
         self.print_board()
